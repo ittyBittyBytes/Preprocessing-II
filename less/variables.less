@@ -12,3 +12,78 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+@mobile: ~"(max-width: 500px)";
+
+@media @mobile {
+    .container {
+        margin: auto;
+        max-width: 500px;
+    }
+    header {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    .title {
+        justify-content: center;
+        width: 100%;
+        display: flex;  
+   }
+   .firstPic {
+        max-width: 90%;
+        margin-left: 20px;
+        margin-top: -20px;
+}
+    .content-section {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        align-content: center;
+    
+}
+    .text-content {
+        display: flex;
+        flex-flow: column;
+        width: 90% !important; 
+        justify-content: center; 
+    }
+    .img-content {
+        display: flex;
+        justify-content: center;
+        width: 90% !important;
+        flex-flow: column;      
+    }
+    .inverse-content {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+        align-content: center;
+        padding-bottom: 30px;
+        border-bottom: 2px dashed @navigation-border;
+    }
+    .content-destination {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        align-content: center;
+    }
+    .content-pick {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        align-items: center;
+    }
+    .destination {
+        display: flex;
+        justify-content: center;
+        width: 90% !important;
+        flex-flow: column;  
+    }
+    .btn {
+        width: 98%;
+    }
+}
